@@ -16,3 +16,12 @@ variable "aws_session_token" {
 variable "region" {
   default = "us-east-1"
 }
+
+variable "docker_user" {
+  type = string
+}
+
+variable "docker_pass" {
+  type      = string
+  sensitive = true
+}
